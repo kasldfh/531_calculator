@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+import argparse
+
+def printPercentages(per1, per2, per3):
+  bench = args.bench
+  deadlift = args.deadlift
+  squat = args.squat
+  press = args.press
+  print("Bench:\t\t", calcper(bench, per1), "\t\t", calcper(bench, per2),
+      "\t\t", calcper(bench, per3))
+  print("Deadlift:\t", calcper(deadlift, per1), "\t\t",
+      calcper(deadlift, per2), "\t\t", calcper(deadlift, per3))
+  print("Press:\t\t", calcper(press, per1), "\t\t", calcper(press, per2),
+      "\t\t", calcper(press, per3))
+  print("Squat:\t\t", calcper(squat, per1), "\t\t", calcper(squat, per2),
+      "\t\t", calcper(squat, per3))
+def calcper(num, per):
+  return roundto(float(num) * per)
+#round, to, nearest, 5, lbs
+def roundto(x):
+  return int(round(5 * round(float(x)/5)))
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-d", "--deadlift")
+parser.add_argument("-s", "--squat")
+parser.add_argument("-b", "--bench")
+parser.add_argument("-p", "--press")
+
+args = parser.parse_args()
+
+#print percentages 30-100
+lift = 185
+print("Maxes\nBench: ", args.bench, " Squat: ", args.squat, " Deadlift: ", args.deadlift, " Press: ", args.press, "\n")
+print("\t", end="")
+for i in range(30, 100, 5):
+  print(str(i) + "%\t", end="")
+  
+print("\nBench\t", end="")
+for i in range(30, 100, 5):
+  print(str(calcper(float(args.bench), float(i / 100))) + "\t", end="")
+
+print("\nDead\t", end="")
+for i in range(30, 100, 5):
+  print(str(calcper(float(args.deadlift), float(i / 100))) + "\t", end="")
+print("\nPress\t", end="")
+for i in range(30, 100, 5):
+  print(str(calcper(float(args.press), float(i / 100))) + "\t", end="")
+print("\nSquat\t", end="")
+for i in range(30, 100, 5):
+  print(str(calcper(float(args.squat), float(i / 100))) + "\t", end="")
+
+print("\n")
+#week, 1
+print("Week 1 - 5, 65, 75, 85")
+printPercentages(.65, .75, .85)
+
+print("\nWeek 2 - 3, 70, 80, 90")
+printPercentages(.70, .80, .90)
+
+print("\nWeek 3 - 5/3/1/, 75, 85, 95")
+printPercentages(.75, .85, .95)
+
+print("\nWeek 4 - deload - 5, 40, 50, 60")
+printPercentages(.40, .50, .60)
