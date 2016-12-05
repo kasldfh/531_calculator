@@ -4,6 +4,7 @@
 Weights are rounded to the nearest 5 units for convenience.
 
 ###Example output for above command
+```
 > Maxes
 > Bench:  225  Squat:  315  Deadlift:  405  Press:  135 
 > 
@@ -36,4 +37,4 @@ Weights are rounded to the nearest 5 units for convenience.
 > Deadlift:	 160 		 200 		 245
 > Press:		 55 		 70 		 80
 > Squat:		 125 		 160 		 190
-
+```
