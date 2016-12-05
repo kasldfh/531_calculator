@@ -16,25 +16,25 @@ Weights are rounded to the nearest 5 units for convenience.
 > 
 > Week 1 - 5, 65, 75, 85
 > Bench:		 145 		 170 		 190
-> Deadlift:	 265 		 305 		 345
+> Deadlift:	     265 		 305 		 345
 > Press:		 90 		 100 		 115
 > Squat:		 205 		 235 		 270
 > 
 > Week 2 - 3, 70, 80, 90
 > Bench:		 160 		 180 		 200
-> Deadlift:	 285 		 325 		 365
+> Deadlift:	     285 		 325 		 365
 > Press:		 95 		 110 		 120
 > Squat:		 220 		 250 		 285
 > 
 > Week 3 - 5/3/1/, 75, 85, 95
 > Bench:		 170 		 190 		 215
-> Deadlift:	 305 		 345 		 385
+> Deadlift:	     305 		 345 		 385
 > Press:		 100 		 115 		 130
 > Squat:		 235 		 270 		 300
 > 
 > Week 4 - deload - 5, 40, 50, 60
 > Bench:		 90 		 110 		 135
-> Deadlift:	 160 		 200 		 245
+> Deadlift:	     160 		 200 		 245
 > Press:		 55 		 70 		 80
 > Squat:		 125 		 160 		 190
 ```
